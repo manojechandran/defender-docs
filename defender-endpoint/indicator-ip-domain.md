@@ -65,7 +65,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 ### Microsoft Defender Antivirus version requirements
 
-This feature is available if your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows) (in active mode)
+This feature is available if your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows) (in in active mode for third-party browsers, while first-party browsers like Edge work regardless of active or passive mode.)
 
 [Behavior Monitoring](/defender-endpoint/behavior-monitor) is enabled
 
