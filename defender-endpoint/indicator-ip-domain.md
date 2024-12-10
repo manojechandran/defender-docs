@@ -65,15 +65,15 @@ It's important to understand the following prerequisites prior to creating indic
 
 ### Microsoft Defender Antivirus version requirements
 
-This feature is available if your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows). Microsoft Defender Antivirus must be in active mode for non-Microsoft browsers. With Microsoft browsers, like Edge, this feature works whether Microsoft Defender Antivirus is in active or passive mode).
+- Your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows). Microsoft Defender Antivirus must be in active mode for non-Microsoft browsers. With Microsoft browsers, like Edge, Microsoft Defender Antivirus can be in active or passive mode.
 
-[Behavior Monitoring](/defender-endpoint/behavior-monitor) is enabled
+- [Behavior Monitoring](/defender-endpoint/behavior-monitor) is enabled.
 
-[Cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus) is turned on.
+- [Cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus) is turned on.
 
-[Cloud Protection network connectivity](/defender-endpoint/configure-network-connections-microsoft-defender-antivirus) is functional
+- [Cloud Protection network connectivity](/defender-endpoint/configure-network-connections-microsoft-defender-antivirus) is turned on.
 
-The antimalware client version must be `4.18.1906.x` or later. See [Monthly platform and engine versions](/defender-endpoint/microsoft-defender-antivirus-updates).
+- The antimalware client version must be `4.18.1906.x` or later. See [Monthly platform and engine versions](/defender-endpoint/microsoft-defender-antivirus-updates).
 
 ### Network Protection requirements
 
@@ -142,7 +142,9 @@ Policy conflict handling for domains/URLs/IP addresses differ from policy confli
 In the case where multiple different action types are set on the same indicator (for example, **block**,  **warn**, and **allow**,  action types set for Microsoft.com), the order those action types would take effect is:
 
 1. Allow
+
 2. Warn
+
 3. Block
 
 "Allow" overrides "warn," which overrides "block", as follows: `Allow` > `Warn` > `Block`. Therefore, in the previous example, `Microsoft.com` would be allowed.
@@ -175,6 +177,7 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 3. Select **Add item**.
 
 4. Specify the following details:
+
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
    - Scope - Define the scope of the machine group.
