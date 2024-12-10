@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: 
 search.appverid: met150
-ms.date: 10/23/2024
+ms.date: 12/10/2024
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -37,7 +37,7 @@ By creating indicators for IPs and URLs or domains, you can now allow or block I
 To block malicious IPs/URLs (as determined by Microsoft), Defender for Endpoint can use:
 
 - Windows Defender SmartScreen for Microsoft browsers
-- Network Protection for non-Microsoft browsers, or calls made outside of a browser
+- Network protection for non-Microsoft browsers, or calls made outside of a browser
 
 The threat-intelligence data set to block malicious IPs/URLs is managed by Microsoft.
 
@@ -65,7 +65,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 ### Microsoft Defender Antivirus version requirements
 
-This feature is available if your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows) (in in active mode for third-party browsers, while first-party browsers like Edge work regardless of active or passive mode.)
+This feature is available if your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows). Microsoft Defender Antivirus must be in active mode for non-Microsoft browsers. With Microsoft browsers, like Edge, this feature works whether Microsoft Defender Antivirus is in active or passive mode).
 
 [Behavior Monitoring](/defender-endpoint/behavior-monitor) is enabled
 
